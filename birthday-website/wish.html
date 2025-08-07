@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Wish</title>
+  <link rel="stylesheet" href="css/wish.css" />
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="/assets/music/happy-birthday-357371.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Balloons -->
+  <div id="balloon-container"></div>
+
+  <!-- Main Content -->
+  <div class="wish-container">
+    <button class="back-btn" onclick="goBack()">← Back</button>
+
+    <h1 class="wish-title">Wishing You a Magical Birthday💖</h1>
+    <p class="wish-text">
+      May your day be filled with love, joy, and all the amazing surprises! 🌟<br>
+      You're incredibly special 
+    </p>
+
+    <!-- Gift Box -->
+    <div class="gift-section">
+      <img src="https://cdn.pixabay.com/photo/2020/12/12/16/33/christmas-5825962_1280.png" alt="Gift Box" class="gift-box" onclick="showSurprise()" />
+      <div id="surprise-message" class="hidden">
+        🎁 Surprise! You're more loved than you know! 💌
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script2.js"></script>
+</body>
+</html>
